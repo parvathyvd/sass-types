@@ -1,0 +1,51 @@
+// box //
+
+
+.box
+  +box(100%, #000, rgba(255,0,0,0), rgba(255,0,0,1))
+.box1
+  +box(100%, #ddd, rgba(0,255,0,0), rgba(0,255,0,1))
+.box2
+  +box(100%, #fff, rgba(0,0,0,0), rgba(0,0,0,1))
+.box3
+  +box(100%, #000, rgba(255,255,255,0), rgba(255,255,255,1))
+
+
+.box:hover
+  background: blue
+  width: 105px
+  transform: rotate(180deg)
+.box1:hover
+  background: red
+  width: 105px
+  transform: rotate(180deg)
+.box2:hover
+  width: 105px
+  background: teal
+  transform: rotate(180deg)
+.box3:hover
+  width: 105px
+  background: black
+  transform: rotate(180deg)
+
+.compass-learn
+  display: flex
+
+.compassbox
+  width: 100px
+  height: 100px
+  +border-radius(5px)
+  background: #bada55
+  margin: 0 10px
+  +box-shadow(0px 0px 50px #000)
+
+.compassbox1
+  @extend .compassbox
+  background: #036
+  +box-shadow(5px 10px 10px #000)
+
+
+.compassbox2
+  @extend .compassbox
+  background: teal
+  +box-shadow(15px 22px 10px #000)

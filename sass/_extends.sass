@@ -1,0 +1,24 @@
+// Global extend //
+
+.extends
+  padding: 40px 0
+
+.alert
+  padding: 10px 10px
+  text-align: center
+  text-transform: uppercase
+  border: 1px solid #ddd
+  +borderRadius(10px)
+  color:white
+  font-weight: bold
+  background: orangered
+
+.success
+  @extend .alert
+  background: green
+.warning
+  @extend .alert
+  background: yellow
+.error
+  @extend .alert
+  background: red
